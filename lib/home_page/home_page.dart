@@ -74,10 +74,17 @@ class _HomePageState extends State<HomePage> {
                   IconButton(
                     onPressed: () {},
                     icon: const Icon(
-                      Icons.favorite_border,
+                      Icons.favorite,
                       color: Colors.red,
                     ),
-                  )
+                  ),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    'Liked by _becca___ dan 10,946,112 others',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ), 
                 ],
               ),
             ]),
