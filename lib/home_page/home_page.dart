@@ -11,6 +11,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   double fontSize = 24;
+  int jumlahLike = 1000000;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,7 +75,9 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   IconButton(
                     onPressed: () {
-                      print('Jumlah Like');
+                      setState(() {
+                        jumlahLike++;
+                      });
                     },
                     icon: const Icon(
                       Icons.favorite,
@@ -85,7 +88,7 @@ class _HomePageState extends State<HomePage> {
                     width: 5,
                   ),
                   Text(
-                    'Liked by _becca___ dan 10,946,112 others',
+                    'Liked by _becca___ dan ${jumlahLike} others',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ],
