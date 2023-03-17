@@ -55,7 +55,8 @@ class _HomePageState extends State<HomePage> {
                 border: Border.all(
               style: BorderStyle.solid,
             )),
-            child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            child:
+                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.network(
                   'https://cdn.myanimelist.net/images/anime/1341/123624.jpg'),
               const Text(
@@ -72,7 +73,9 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      print('Jumlah Like');
+                    },
                     icon: const Icon(
                       Icons.favorite,
                       color: Colors.red,
@@ -84,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                   Text(
                     'Liked by _becca___ dan 10,946,112 others',
                     style: TextStyle(fontWeight: FontWeight.bold),
-                  ), 
+                  ),
                 ],
               ),
             ]),
